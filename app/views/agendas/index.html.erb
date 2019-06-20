@@ -1,4 +1,6 @@
 <% @agendas.each do |entry| %>
-	<h1> <%= entry.image %></h1>
-	<p><%= entry.description %></p>
+<h1><%= entry.nom %></h1>
+<img src="<%=entry.photo%>">
+<p><%= entry.description %></p>
+<p> <%= entry.date %></p>
 <% end %>

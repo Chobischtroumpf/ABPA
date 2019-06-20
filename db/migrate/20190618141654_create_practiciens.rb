@@ -4,7 +4,7 @@ class CreatePracticiens < ActiveRecord::Migration[5.2]
       t.string :nom
       t.string :localisation
       t.string :education
-      t.string :image
+      t.string :photo
       t.string :telephone
       t.string :site
       

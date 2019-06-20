@@ -14,6 +14,7 @@ class AgendasController < ApplicationController
   def create
     @agenda = Agenda.new(agenda_params)
     @agenda.user = current_user
+    authorize @agenda
     if @agenda.save!
       redirect_to agendas_path
     else
@@ -25,6 +26,6 @@ class AgendasController < ApplicationController
   private
 
   def agenda_params
-    params.require(:garden).permit(:image, :description, :date)
+    params.require(:agenda).permit(:nom, :photo, :description, :date)
   end
 end

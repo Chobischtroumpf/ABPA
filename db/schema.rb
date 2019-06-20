@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 2019_06_20_102801) do
   enable_extension "plpgsql"
 
   create_table "agendas", force: :cascade do |t|
-    t.string "image"
+    t.string "nom"
+    t.string "photo"
     t.string "description"
     t.date "date"
     t.bigint "user_id"
@@ -29,7 +30,7 @@ ActiveRecord::Schema.define(version: 2019_06_20_102801) do
     t.string "nom"
     t.string "localisation"
     t.string "education"
-    t.string "image"
+    t.string "photo"
     t.string "telephone"
     t.string "site"
     t.bigint "user_id"

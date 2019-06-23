@@ -1,0 +1,7 @@
+<% @practiciens.each do |entry| %>
+<h1><%= entry.nom %></h1>
+<p><%= entry.email %></p>
+<button class ="button">
+	<%= link_to "Remove", practicien_path(entry), method: :delete%>
+</button>
+<% end %>

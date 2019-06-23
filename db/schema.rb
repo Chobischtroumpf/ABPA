@@ -28,10 +28,12 @@ ActiveRecord::Schema.define(version: 2019_06_20_102801) do
 
   create_table "practiciens", force: :cascade do |t|
     t.string "nom"
+    t.string "pratique"
     t.string "localisation"
     t.string "education"
     t.string "photo"
     t.string "telephone"
+    t.string "email"
     t.string "site"
     t.bigint "user_id"
     t.datetime "created_at", null: false

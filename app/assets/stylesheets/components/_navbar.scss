@@ -1,12 +1,109 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+position: relative;
+width: 1280px;
+height: 67px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.NavbarBackground {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(180deg, #394F49 -192.62%, rgba(57, 79, 73, 0) 402.24%);
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.LieuxDePratique {
+position: absolute;
+left: 1.8%;
+right: 86.72%;
+top: 31.34%;
+bottom: 31.34%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+color: #440D0D;
+}
+
+.QuiSommesNous {
+
+position: absolute;
+left: 15.16%;
+right: 71.95%;
+top: 29.85%;
+bottom: 31.34%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+
+color: #440D0D;
+
+}
+
+.contact {
+
+position: absolute;
+left: 93.36%;
+right: 1.8%;
+top: 31.34%;
+bottom: 31.34%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+color: #440D0D;
+}
+
+.ActesBibliographie {
+position: absolute;
+left: 66.88%;
+right: 20.7%;
+top: 31.34%;
+bottom: 31.34%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+color: #440D0D;
+}
+
+
+.AgendaActivite {
+position: absolute;
+left: 81.8%;
+right: 8.28%;
+top: 31.34%;
+bottom: 31.34%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+color: #440D0D;
+}
+
+
+.ABPAnavbar {
+position: absolute;
+left: 46.41%;
+right: 46.48%;
+top: 13.43%;
+bottom: 13.43%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+color: #008080;
 }

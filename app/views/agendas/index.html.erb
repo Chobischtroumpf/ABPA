@@ -3,4 +3,7 @@
 <img src="<%=entry.photo%>">
 <p><%= entry.description %></p>
 <p> <%= entry.date %></p>
+<button class ="button">
+	<%= link_to "Remove", agendas_path(entry), method: :delete%>
+</button>
 <% end %>

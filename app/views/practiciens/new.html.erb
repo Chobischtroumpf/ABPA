@@ -1,0 +1,14 @@
+<div>
+  <%= simple_form_for @practicien do |f| %>
+  	<%= f.input :nom %>
+	<%= f.input :pratique, label: "nom de l'association" %>
+	<%= f.input :localisation %>
+	<%= f.input :email %>
+	<%= f.input :education, label: "type d'education :", error: "le type d'education est obligatoire"  %>
+	<%= f.input :telephone %>
+	<%= f.input :site %>
+	<%= f.input :photo %>
+	<%= f.input :photo_cache, as: :hidden %>
+	<%= f.button :submit, "ajouter un lieu de pratique", class: "button" %>
+  <% end %>
+</div>

@@ -4,4 +4,16 @@ class PracticienPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  def index?
+    return true
+  end
+
+  def create?
+    true
+  end
+
+  def destroy?
+    true
+  end
 end

@@ -1,0 +1,19 @@
+.containers {
+	display: flex;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 2000;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.facebook{
+	font-size: 30px;
+	// line-height: 50px;
+}
+
+.trademarks {
+	padding-right: 15px;
+}

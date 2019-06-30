@@ -12,7 +12,7 @@
 </div>
 -->
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-	<a class="navbar-brand" href="#">
+	<a class="navbar-brand" href="<%= root_path %>">
 		ABPA
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +23,19 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#" >Lieux de pratique</a>
+				<a class="nav-link" href="<%= practiciens_path %>" >Lieux de pratique</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Qui sommes nous ?</a>
+				<a class="nav-link" href="<%= quisommesnous_path %>">Qui sommes nous ?</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Actes - Bibliographie</a>
+				<a class="nav-link" href="<%= actes_path %>">Actes - Bibliographie</a>
 			</li>	
 			<li class="nav-item">
-				<a class="nav-link" href="#">Agendas et Activités</a>
+				<a class="nav-link" href="<%=agendas_path %>">Agendas et Activités</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="<%= contact_path %>">Contact</a>
 			</li>
 			<li class="nav-item dropdown">
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

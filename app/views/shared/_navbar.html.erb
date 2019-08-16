@@ -12,9 +12,8 @@
 </div>
 -->
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-	<a class="navbar-brand" href="#">
-		ABPA
-	</a>
+        <%= link_to "ABPA", root_path, class: "navbar-brand" %>
+
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -23,17 +22,17 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#" >Lieux de pratique</a>
+        <%= link_to "Lieux de pratique", practiciens_path, class: "nav-link" %>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Qui sommes nous ?</a>
+        <%= link_to "Qui sommes nous ?", pages_aboutus_path, class: "nav-link" %>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Actes - Bibliographie</a>
-			</li>	
-			<li class="nav-item">
-				<a class="nav-link" href="#">Agendas et Activités</a>
+        <%= link_to "Actes - Bibliographie", pages_actes_path, class: "nav-link" %>
 			</li>
+			<li class="nav-item">
+        <%= link_to "Agendas et Activités", agendas_path, class: "nav-link" %>
+  		</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Contact</a>
 			</li>

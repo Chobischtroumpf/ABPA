@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  get 'pages/aboutus'
+  get 'pages/actes'
+  get 'actes/index'
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :practiciens
-  resources :agendas 
+  resources :agendas
 end

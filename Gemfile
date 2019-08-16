@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.3'
+ruby '2.6.3'
 
 gem 'devise'
 gem 'pundit'
@@ -9,7 +9,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'pg_search'
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
-gem 'pg', '~> 0.21'
+gem 'pg', '~> 0.21.0'
 gem 'puma'
 gem 'rails', '5.2.3'
 gem 'redis'

@@ -1,13 +1,20 @@
 .BackgroundColor1{
   z-index: -1;
   background-color: #570F4D;
+  padding-bottom: 0.1rem;
+}
+
+.BackgroundColor2{
+    z-index: -1;
+  background-color: #191D32;
+  padding-bottom: 0.1rem;
 }
 
 .Photo1{
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 86.87%, #000000 117.46%), url(https://i.imgur.com/uq1GP8I.jpg);
   position: relative;
     width: 100vw;
-  height: 80vh;
+  height: 78vh;
   padding-top: 70vh;
   color: #24FF00;
   text-align: center;
@@ -15,7 +22,6 @@
   background-size: cover;
   background-position: center;
 }
-
 .textes{
   position: relative;
   width:  50vw;
@@ -28,9 +34,42 @@
   display: flex;
   align-items: center;
   text-align: center;
+  padding-top: 1rem;
   color: #69A2B0;
 }
 
 .Photo2{
+  background-image: linear-gradient(188.7deg, rgba(97, 97, 97, 0) 53.94%, #000000 111.92%), url(https://i.imgur.com/T2Sna1l.jpg);
+  position: relative;
+    height: 70vh;
+    text-align: center;
+    padding-top: 62vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #24FF00;
+}
 
+.Photo3{
+  background-image: linear-gradient(188.7deg, rgba(97, 97, 97, 0) 53.94%, #000000 111.92%), url(https://i.imgur.com/5KeySZ5.jpg);
+  position: relative;
+  height: 60vh;
+  text-align: center;
+  padding-top: 52vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #24FF00;
+}
+
+.Photo4{
+  background-image: linear-gradient(188.7deg, rgba(97, 97, 97, 0) 53.94%, #000000 111.92%), url(https://i.imgur.com/rrEUTlq.jpg);
+  position: relative;
+  height: 85vh;
+  text-align: center;
+  padding-top: 78vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #24FF00;
 }

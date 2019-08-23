@@ -3,7 +3,7 @@ class Agenda < ApplicationRecord
 
   belongs_to :user
 
-  # validates :user_id, presence: true
-  # validates :nom, presence: true
-  # validates :date, presence: true
+  validates :user_id, presence: true
+  validates :nom, presence: true
+  validates :date, presence: true
 end

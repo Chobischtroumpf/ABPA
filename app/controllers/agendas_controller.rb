@@ -1,4 +1,5 @@
 class AgendasController < ApplicationController
+  before_action :find_garden, only: [:destroy]
   skip_before_action :authenticate_user!, only: :index
 
   def index
@@ -22,10 +23,20 @@ class AgendasController < ApplicationController
     end
   end
 
+  def destroy
+    authorize @agenda
+    @agenda.destroy
+    redirect_to agendas_path
+  end
 
   private
 
   def agenda_params
     params.require(:agenda).permit(:nom, :photo, :description, :date)
+  end
+
+  def find_agenda
+    @agenda = Agenda.find(params[:id])
+    authorize @agenda
   end
 end

@@ -38,7 +38,7 @@ skip_before_action :authenticate_user!, only: :index
     @practicien.delete
     redirect_to practiciens_path
   end
-  
+
   private
 
   def practicien_params

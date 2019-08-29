@@ -1,11 +1,19 @@
-<% @agendas.each do |entree| %>
-<h1><%= entree.nom %></h1>
-<img src="<%=entree.photo%>">
-<p><%= entree.description %></p>
-<p> <%= entree.date %></p>
-  <% if policy(entree).destroy? %>
-    <button class ="button">
-      <%= link_to "Remove", agendas_path(entree, agenda)s, method: :delete%>
-    </button>
+<div class="conference-container">
+  <% @agendas.each do |entree| %>
+    <div class="card-conference ">
+      <img src="<%=entree.photo%>">
+      <div class="card-conference-infos">
+        <div>
+          <h2><%= entree.nom %></h2>
+          <p><%= entree.description %></p>
+          <p> <%= entree.date %></p>
+        </div>
+        <% if policy(entree).destroy? %>
+          <button class ="button">
+            <%= link_to "Remove", agenda_path(entree), method: :delete%>
+          </button>
+        <% end %>
+      </div>
+    </div>
   <% end %>
-<% end %>
+</div>

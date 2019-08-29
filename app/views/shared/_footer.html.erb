@@ -1,5 +1,8 @@
 <div class="containers">
 	<a href="https://www.facebook.com/groups/336382303840605/"><i class="facebook fab fa-facebook" ></i></a>
+  <% if current_user %>
+  <%= link_to "nouvel evenement", new_agenda_path %>
+  <% end %>
 	<p class="trademarks">ABPA asbl, Tous droits réservés, 2007 - 2019 </p>
 </div >
 

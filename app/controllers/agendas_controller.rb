@@ -1,5 +1,5 @@
 class AgendasController < ApplicationController
-  before_action :find_garden, only: [:destroy]
+  before_action :find_agenda, only: [:destroy]
   skip_before_action :authenticate_user!, only: :index
 
   def index

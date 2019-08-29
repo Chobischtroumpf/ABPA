@@ -1,10 +1,12 @@
 <div>
   <%= simple_form_for @practicien do |f| %>
-  	<%= f.input :nom %>
-	<%= f.input :pratique, label: "nom de l'association" %>
+  <%= f.input :nom %>
+	<%= f.input :nompratique, label: "nom de l'association" %>
 	<%= f.input :localisation %>
 	<%= f.input :email %>
-	<%= f.input :education, label: "type d'education :", error: "le type d'education est obligatoire"  %>
+  <%= f.input :education_psy, label: "education psycomotrice", as: :check_boxes %>
+  <%= f.input :groupe_aide, label: "groupe d'aide", as: :check_boxes %>
+  <%= f.input :aide_individuelle, label: "aide individuelle", as: :check_boxes%>
 	<%= f.input :telephone %>
 	<%= f.input :site %>
 	<%= f.input :photo %>

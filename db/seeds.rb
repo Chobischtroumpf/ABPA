@@ -40,19 +40,21 @@ Practicien.create(
   nom: "laura",
   email: "pugliese@gmail.com",
   localisation: "place st.Marc",
-  education: "groupe"
   )
 
 Practicien.create(
   nom: "taura",
   email: "pugbese@gmail.com",
   localisation: "place st.jean",
-  education: "groupe"
   )
 
 Practicien.create(
   nom: "pappa",
   email: "pugtiese@gmail.com",
     localisation: "place st.jean",
-  education: "groupe"
   )
+
+User.create(
+    email: "info@abpa.be",
+    password: "bernarda1"
+    )

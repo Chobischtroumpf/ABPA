@@ -23,7 +23,7 @@ skip_before_action :authenticate_user!, only: :index
 
   def create
     @practicien = Practicien.new(practicien_params)
-    @practicien.user_id = current_user
+    @practicien.user = current_user
     authorize @practicien
     if @practicien.save!
       redirect_to practiciens_path
@@ -42,6 +42,6 @@ skip_before_action :authenticate_user!, only: :index
   private
 
   def practicien_params
-    params.require(:practicien).permit(:nom, :localisation, :education, :telephone, :site, :photo)
+    params.require(:practicien).permit(:nom, :localisation, :email, :education, :telephone, :site, :photo)
   end
 end

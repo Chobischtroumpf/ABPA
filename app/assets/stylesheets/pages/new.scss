@@ -1,0 +1,31 @@
+.big-container-login {
+  display: relative;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-left: 35vw;
+}
+.big-container-login2 {
+  display: relative;
+  justify-content: center;
+  margin-top: 7vh;
+  margin-left: 35vw;
+}
+.small-container-login {
+  padding: 50px;
+  width: 50%;
+  // margin: 0 auto;
+  // margin-top: 150px;
+  border-radius: 5px;
+  background-color: white;
+  border-style: solid;
+  border-color: $button;
+    h2 {
+      color: $title;
+      font-weight: bolder;
+    }
+  }
+.education {
+  display: flex;
+  justify-content: space-around;
+
+}

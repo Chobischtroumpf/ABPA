@@ -1,0 +1,21 @@
+
+.button {
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  background: $button;
+  transition: background 0.3s ease;
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-weight: bold;
+}
+
+.button a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  color: white;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+}

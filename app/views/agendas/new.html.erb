@@ -1,12 +1,14 @@
-<div>
-  <%= simple_form_for @agenda do |f| %>
-  	<%= f.input :nom %>
-	<%= f.input :description %>
-	<%= f.input :date, as: :date, start_year: Date.today.year - 20,
-              end_year: Date.today.year + 10,
-              order: [:year, :month, :day] %>
-	<%= f.input :photo %>
-	<%= f.input :photo_cache, as: :hidden %>
-	<%= f.button :submit, "ajouter un evenement a l'agenda", class: "button" %>
-  <% end %>
+<div class="big-container-login">
+  <div class="small-container-login">
+    <%= simple_form_for @agenda do |f| %>
+    	<%= f.input :nom %>
+    	<%= f.input :description %>
+    	<%= f.input :date, as: :date, start_year: Date.today.year - 20,
+                  end_year: Date.today.year + 10,
+                  order: [:year, :month, :day] %>
+    	<%= f.input :photo %>
+    	<%= f.input :photo_cache, as: :hidden %>
+    	<%= f.button :submit, "ajouter un evenement a l'agenda", class: "button" %>
+    <% end %>
+  </div>
 </div>

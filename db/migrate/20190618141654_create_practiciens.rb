@@ -3,10 +3,12 @@ class CreatePracticiens < ActiveRecord::Migration[5.2]
     create_table :practiciens do |t|
       t.string :nom
       t.string :nompratique
-      t.string :localisation
-      t.string :education_psy
-      t.string :groupe_aide
-      t.string :aide_individuelle
+      t.string :adressenum
+      t.integer :zipcode
+      t.string :province
+      t.string :educationpsy
+      t.string :groupeaide
+      t.string :aideindividuelle
       t.string :photo
 
       t.string :telephone

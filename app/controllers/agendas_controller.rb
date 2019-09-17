@@ -4,7 +4,7 @@ class AgendasController < ApplicationController
 
   def index
     @agendas = Agenda.all
-    @agendas = policy_scope(Agenda).order(created_at: :desc)
+    @agendas = policy_scope(Agenda).order(date: :desc)
   end
 
   def new

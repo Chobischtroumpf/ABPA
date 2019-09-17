@@ -1,17 +1,24 @@
 <div class="searchbar">
   <%= simple_form_for :search, url: practiciens_path, method: :get do |f| %>
-    <div class="search-form-control form-group">
-      <div class="inputs">
-        <%= text_field_tag :search_query,
-          params[:search_query],
-          class: "form-control string required",
-          placeholder: " lieu de pratique ?"
-        %>
+    <div class="search-form-control form-group searchbar_content">
+      <div class="input">
         <select class="form-control string required" name="sq_category" id="search_query">
-          <option value="">Quel type d'education ?</option>
+          <option value="">Type de pratique  </option>
           <option value="pratique_educative"> Pratique Educative </option>
           <option value="groupe_daide"> Groupe d'aide</option>
           <option value="aide_individuelle"> Aide individuelle</option>
+          <option value="">pas de preference</option>
+        </select>
+      </div>
+      <div class="input">
+        <select class="form-control string required" name="sq_category" id="search_query">
+          <option value="">Lieu</option>
+          <option value="Bruxelles"> Bruxelles</option>
+          <option value="Brabant Wallon">Brabant Wallon</option>
+          <option value="Hainaut">Hainaut</option>
+          <option value="Namur">Namur</option>
+          <option value="Liege">Liege</option>
+          <option value="Luxembourg">Luxembourg</option>
           <option value="">pas de preference</option>
         </select>
       </div>
@@ -20,7 +27,5 @@
         <%= link_to 'Search', practiciens_path  %>
       </button>
     </div>
-
-
   <% end %>
 </div>

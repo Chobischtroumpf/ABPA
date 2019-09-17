@@ -1,7 +1,4 @@
 // Specific CSS for your home-page
-.container1
- {
-  background: linear-gradient(322.05deg, #5BC0EB 26.59%, rgba(91, 192, 235, 0.2) 86.23%), linear-gradient(315.89deg, rgba(252, 255, 75, 0.285) 62.49%, rgba(252, 255, 75, 0.75) 115.89%);
-  width: 100vw;
-  height: 100vh;
- }
+.containerBanner {
+  background-color: $beige;
+}

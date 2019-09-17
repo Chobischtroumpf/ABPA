@@ -1,7 +1,23 @@
-<% @practiciens.each do |entry| %>
-<h1><%= entry.nom %></h1>
-<p><%= entry.email %></p>
-<button class ="button">
-	<%= link_to "Remove", practicien_path(entry), method: :delete%>
-</button>
-<% end %>
+<div class="container-devise">
+  <div class="practicienscontainer">
+    <% @practiciens.each do |entry| %>
+    <div>
+      <h4><%= entry.nom %></h4>
+      <h5><%= entry.nompratique %></h5>
+      <p>
+        <%= entry.adressenum %> <%= entry.zipcode %> <br>
+        <%= entry.province %>
+      </p>
+
+      <p><%= entry.email %></p>
+
+      <% if current_user != nil %>
+        <button class ="button">
+      	  <%= link_to "Remove", practicien_path(entry), method: :delete%>
+        </button>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>
+  <%= render 'shared/footer' %>

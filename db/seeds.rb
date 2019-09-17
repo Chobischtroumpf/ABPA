@@ -6,55 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Agenda.create(
-  photo: "tada",
-  description: "ceci est une description"
-  )
-
-Agenda.create(
-  photo: "tada",
-  description: "ceci est une description"
-  )
-
-Agenda.create(
-  photo: "tada",
-  description: "ceci est une description"
-  )
-
-Agenda.create(
-  photo: "tada",
-  description: "ceci est une description"
-  )
-
-Agenda.create(
-  photo: "tada",
-  description: "ceci est une description"
-  )
-
-Agenda.create(
-  photo: "tada",
-  description: "ceci est une description"
-  )
-
-Practicien.create(
-  nom: "laura",
-  email: "pugliese@gmail.com",
-  localisation: "place st.Marc",
-  )
-
-Practicien.create(
-  nom: "taura",
-  email: "pugbese@gmail.com",
-  localisation: "place st.jean",
-  )
-
-Practicien.create(
-  nom: "pappa",
-  email: "pugtiese@gmail.com",
-    localisation: "place st.jean",
-  )
-
 User.create(
-    email: "info@abpa.be",
-    password: "bernarda1"
-    )
+  email: "info@abpa.be",
+  password: "bernarda1"
+)

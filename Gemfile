@@ -8,6 +8,7 @@ gem 'carrierwave', '~> 1.2'
 
 gem 'pg_search'
 gem 'bootsnap', require: false
+gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21.0'
 gem 'puma'

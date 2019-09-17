@@ -1,27 +1,22 @@
-.BackgroundColor1{
+.BackgroundColor{
   z-index: -1;
-  background-color: #570F4D;
-  padding-bottom: 0.1rem;
-}
-
-.BackgroundColor2{
-    z-index: -1;
-  background-color: #191D32;
+  background-color: $beige;
   padding-bottom: 0.1rem;
 }
 
 .Photo1{
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 86.87%, #000000 117.46%), url(https://i.imgur.com/uq1GP8I.jpg);
+  background-image: linear-gradient(180.28deg, rgba(0, 0, 0, 0) 46.13%, #000000 130.94%), url(https://i.imgur.com/uq1GP8I.jpg);
   position: relative;
     width: 100vw;
-  height: 78vh;
-  padding-top: 70vh;
+  height: 90vh;
+  padding-top: 80vh;
   color: #24FF00;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .textes{
   position: relative;
   width:  50vw;
@@ -35,7 +30,7 @@
   align-items: center;
   text-align: center;
   padding-top: 1rem;
-  color: #69A2B0;
+  color: #34251d;
 }
 
 .Photo2{
@@ -76,4 +71,12 @@
 
 .bottom_text {
 margin-bottom: 5vh;
+}
+
+.entete {
+  color: $beige;
+}
+
+.titre {
+  color: $beige;
 }

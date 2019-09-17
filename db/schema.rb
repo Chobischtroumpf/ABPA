@@ -28,9 +28,13 @@ ActiveRecord::Schema.define(version: 2019_06_20_102801) do
 
   create_table "practiciens", force: :cascade do |t|
     t.string "nom"
-    t.string "pratique"
-    t.string "localisation"
-    t.string "education"
+    t.string "nompratique"
+    t.string "adressenum"
+    t.integer "zipcode"
+    t.string "province"
+    t.string "educationpsy"
+    t.string "groupeaide"
+    t.string "aideindividuelle"
     t.string "photo"
     t.string "telephone"
     t.string "email"

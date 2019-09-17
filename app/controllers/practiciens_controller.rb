@@ -4,7 +4,7 @@ skip_before_action :authenticate_user!, only: :index
   def index
         if params[:search_query].present?
       sql_query = " \
-      practiciens.localisation @@ :query \
+      practiciens.adresse @@ :query \
       AND practiciens.education @@ :query_bis \
       "
       @practiciens = policy_scope(Practicien.where(sql_query, query: "%#{params[:search_query]}%", query_bis: "%#{params[:sq_category]}%"))
@@ -23,9 +23,9 @@ skip_before_action :authenticate_user!, only: :index
 
   def create
     @practicien = Practicien.new(practicien_params)
-    @practicien.user_id = current_user
+    @practicien.user = current_user
     authorize @practicien
-    if @practicien.save!
+    if @practicien.save
       redirect_to practiciens_path
     else
       render :new
@@ -42,6 +42,6 @@ skip_before_action :authenticate_user!, only: :index
   private
 
   def practicien_params
-    params.require(:practicien).permit(:nom, :localisation, :education, :telephone, :site, :photo)
+    params.require(:practicien).permit(:nom, :adressenum, :zipcode, :province, :email, :nompratique, :telephone, :site, :educationpsy, :groupeaide, :aideindividuelle)
   end
 end

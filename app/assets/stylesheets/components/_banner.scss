@@ -1,11 +1,26 @@
+.bannerlogo {
+  display: flex;
+}
+
+.logo {
+  width: 370px;
+  height: 300px;
+  padding-top: 150px;
+  padding-right: 60px;
+  padding-left: 50px;
+
+}
+
 .BackgroundBanner{
-  background-image: linear-gradient(175.19deg, rgba(0, 0, 0, 0) 66.03%, #000000 106.65%), linear-gradient(180deg, #B4DAD1 -31.48%, rgba(255, 255, 255, 0.42) -2.82%, rgba(253, 253, 253, 0) 33.96%), url(https://i.imgur.com/qH9kHPy.jpg);
+  // background-color: $beige;
   position: relative;
   width: 100vw;
   height: 75vh;
+  padding-top: 35px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  // padding-bottom:
 }
 
 
@@ -15,13 +30,13 @@
   text-align: center;
 	font-style: normal;
 	font-weight: bold;
-  padding-top: 10vh;
+  padding-top: 18vh;
 	font-size: 250px;
 	line-height: 156px;
 
 /* identical to box height */
 
-color: #582F9A;
+color: #34251d;
 }
 
 .LPPA {
@@ -29,8 +44,8 @@ color: #582F9A;
 	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-    padding-top: 40vh;
+    padding-top: 12vh;
 	font-size: 34px;
 	line-height: 60px;
-  color: #24FF00;
+  color: #34251d;
 }

@@ -1,14 +1,32 @@
-<div>
-  <%= simple_form_for @practicien do |f| %>
-  	<%= f.input :nom %>
-	<%= f.input :pratique, label: "nom de l'association" %>
-	<%= f.input :localisation %>
-	<%= f.input :email %>
-	<%= f.input :education, label: "type d'education :", error: "le type d'education est obligatoire"  %>
-	<%= f.input :telephone %>
-	<%= f.input :site %>
-	<%= f.input :photo %>
-	<%= f.input :photo_cache, as: :hidden %>
-	<%= f.button :submit, "ajouter un lieu de pratique", class: "button" %>
-  <% end %>
+<div class="container-devise2">
+  <div class="big-container-login">
+    <div class="small-container-login">
+      <%= simple_form_for @practicien do |f| %>
+        <%= f.input :nom %>
+      	<%= f.input :nompratique, label: "Nom de la pratique" %>
+        <%= f.input :adressenum, label: "Adresse + num" %>
+        <%= f.input :zipcode, label: "Code postal" %>
+        <div class="form-group string required practicien_province">
+          <label class="form-control-label string required" for="practicien_province">Province</label><abbr title="required">*</abbr>
+          <select class="form-control string required" name="practicien[province]" id="practicien_province">
+            <option value="Bruxelles"> Bruxelles</option>
+            <option value="Brabant Wallon">Brabant Wallon</option>
+            <option value="Hainaut">Hainaut</option>
+            <option value="Namur">Namur</option>
+            <option value="Liege">Liege</option>
+            <option value="Luxembourg">Luxembourg</option>
+          </select>
+        </div>
+      	<%= f.input :email %>
+        <div class="education">
+          <div class="education_psy">  <%= f.input :educationpsy, label: "education psycomotrice", as: :radio_buttons, collection: [['oui', 'education psy'], ['non', 'null']], label_method: :first, value_method: :second %> </div>
+          <div class="groupe_aide"> <%= f.input :groupeaide, label: "groupe d'aide", as: :radio_buttons, collection: [['oui', 'groupe aide'], ['non', 'null']], label_method: :first, value_method: :second %></div>
+          <div class="aide_individuelle"> <%= f.input :aideindividuelle, label: "aide individuelle", as: :radio_buttons, collection: [['oui', 'aide individuelle'], ['non', 'null']], label_method: :first, value_method: :second%></div>
+        </div>
+      	<%= f.input :telephone %>
+      	<%= f.input :site %>
+      	<%= f.button :submit, "ajouter un lieu de pratique", class: "button btn-primary" %>
+      <% end %>
+    </div>
+  </div>
 </div>

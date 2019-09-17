@@ -1,10 +1,10 @@
 class AgendasController < ApplicationController
-  before_action :find_garden, only: [:destroy]
+  before_action :find_agenda, only: [:destroy]
   skip_before_action :authenticate_user!, only: :index
 
   def index
     @agendas = Agenda.all
-    @agendas = policy_scope(Agenda).order(created_at: :desc)
+    @agendas = policy_scope(Agenda).order(date: :desc)
   end
 
   def new

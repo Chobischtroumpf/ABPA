@@ -42,6 +42,6 @@ skip_before_action :authenticate_user!, only: :index
   private
 
   def practicien_params
-    params.require(:practicien).permit(:nom, :adressenum, :zipcode, :province, :email, :nompratique, :telephone, :site, :educationpsy, :groupeaide, :aideindividuelle)
+    params.require(:practicien).permit(:nom, :adressenum, :zipcode, :province, :email, :nompratique, :telephone, :telephone_prive, :site, :educationpsy, :groupeaide, :aideindividuelle)
   end
 end

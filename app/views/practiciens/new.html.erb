@@ -19,11 +19,12 @@
         </div>
       	<%= f.input :email %>
         <div class="education">
-          <div class="education_psy">  <%= f.input :educationpsy, label: "education psycomotrice", as: :radio_buttons, collection: [['oui', 'education psy'], ['non', 'null']], label_method: :first, value_method: :second %> </div>
-          <div class="groupe_aide"> <%= f.input :groupeaide, label: "groupe d'aide", as: :radio_buttons, collection: [['oui', 'groupe aide'], ['non', 'null']], label_method: :first, value_method: :second %></div>
-          <div class="aide_individuelle"> <%= f.input :aideindividuelle, label: "aide individuelle", as: :radio_buttons, collection: [['oui', 'aide individuelle'], ['non', 'null']], label_method: :first, value_method: :second%></div>
+          <div class="education_psy">  <%= f.input :educationpsy, label: "Education psycomotrice", as: :radio_buttons, collection: [['oui', 'education psy'], ['non', 'null']], label_method: :first, value_method: :second %> </div>
+          <div class="groupe_aide"> <%= f.input :groupeaide, label: "Groupe d'aide", as: :radio_buttons, collection: [['oui', 'groupe aide'], ['non', 'null']], label_method: :first, value_method: :second %></div>
+          <div class="aide_individuelle"> <%= f.input :aideindividuelle, label: "Aide individuelle", as: :radio_buttons, collection: [['oui', 'aide individuelle'], ['non', 'null']], label_method: :first, value_method: :second%></div>
         </div>
       	<%= f.input :telephone %>
+        <%= f.input :telephone_prive, label: 'Telephone N*2' %>
       	<%= f.input :site %>
       	<%= f.button :submit, "ajouter un lieu de pratique", class: "button btn-primary" %>
       <% end %>

@@ -1,7 +1,7 @@
 .practicienscontainer {
      display: grid;
   // grid-template-columns: 285px 285px 285px 285px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1vw;
   padding-top: 15vh;
   padding-left: 1vw;
@@ -11,6 +11,8 @@
 .practiciens_cards {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
   p {
     margin-bottom: 0.5rem;
   }

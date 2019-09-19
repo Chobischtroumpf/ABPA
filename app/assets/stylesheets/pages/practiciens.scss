@@ -7,3 +7,16 @@
   padding-left: 1vw;
   justify-content: space-between;
 }
+
+.practiciens_cards {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin-bottom: 0.5rem;
+  }
+  .donnee_practicien {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+  }
+}

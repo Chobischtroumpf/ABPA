@@ -1,16 +1,18 @@
 <div class="container-devise">
   <div class="practicienscontainer">
     <% @practiciens.each do |entry| %>
-    <div>
+    <div class="practiciens_cards">
       <h4><%= entry.nom %></h4>
       <h5><%= entry.nompratique %></h5>
       <p>
         <%= entry.adressenum %> <%= entry.zipcode %> <br>
         <%= entry.province %>
       </p>
-
-      <p><%= entry.email %></p>
-
+      <p>
+        <%= entry.telephone %>
+      </p>
+      <a class="donnee_practicien" href="mailto:<% entry.email %>"><%= entry.email %></a>
+      <a class="donnee_practicien" href="<%= entry.site %>"><%= entry.site %></a>
       <% if current_user != nil %>
         <button class ="bouton">
       	  <%= link_to "Remove", practicien_path(entry), method: :delete%>

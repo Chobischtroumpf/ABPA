@@ -9,8 +9,8 @@
             <p><%= entree.description %></p>
             <p> <%= entree.date %></p>
           </div>
-          <% if policy(entree).destroy? %>
-            <button class ="button">
+          <% if current_user != nil %>
+            <button class ="bouton">
               <%= link_to "Remove", agenda_path(entree), method: :delete%>
             </button>
           <% end %>

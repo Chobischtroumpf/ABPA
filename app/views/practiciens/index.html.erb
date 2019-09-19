@@ -12,7 +12,7 @@
       <p><%= entry.email %></p>
 
       <% if current_user != nil %>
-        <button class ="button">
+        <button class ="bouton">
       	  <%= link_to "Remove", practicien_path(entry), method: :delete%>
         </button>
       <% end %>

@@ -35,7 +35,9 @@
                 </div>
                 <div class="modal-footer">
                   <p class="trademarks">ABPA asbl, Tous droits réservés, 2007 - 2019 </p>
-                  <%= link_to "sign in", new_user_session_path %>
+                  <% if current_user == nil %>
+                    <%= link_to "sign in", new_user_session_path %>
+                  <% end %>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>

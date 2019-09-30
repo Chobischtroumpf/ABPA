@@ -9,4 +9,16 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def conception
+  end
+
+  def education
+  end
+
+  def groupe_aide
+  end
+
+  def aide_individuelle
+  end
 end

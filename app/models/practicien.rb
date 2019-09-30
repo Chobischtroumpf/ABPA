@@ -12,4 +12,10 @@ class Practicien < ApplicationRecord
   validates :email, presence: true
   validates :user_id, presence: true
 
+  include PgSearch
+  pg_search_scope :search_by_type_of_practice_and_province,
+  against: [:educationpsy, :groupeaide, :aideindividuelle, :province],
+  using: {
+    tsearch: { prefix: true }
+  }
 end

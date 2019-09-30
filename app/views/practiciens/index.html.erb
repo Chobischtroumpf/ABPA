@@ -1,4 +1,6 @@
 <div class="container-devise">
+    <%= render "shared/searchbar" %>
+
   <div class="practicienscontainer">
     <% @practiciens.each do |entry| %>
       <div class="practiciens_cards">
@@ -22,6 +24,5 @@
       </div>
     <% end %>
   </div>
-  <%= render "shared/searchbar" %>
 </div>
   <%= render 'shared/footer' %>

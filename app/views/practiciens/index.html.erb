@@ -1,6 +1,5 @@
 <div class="container-devise">
-    <%= render "shared/searchbar" %>
-
+  <%= render "shared/searchbar" %>
   <div class="practicienscontainer">
     <% @practiciens.each do |entry| %>
       <div class="practiciens_cards">
@@ -14,8 +13,8 @@
           <%= entry.telephone %>
           <%= entry.telephone_prive %>
         </p>
-        <a class="donnee_practicien" href="mailto:<% entry.email %>"><%= entry.email %></a>
-        <a class="donnee_practicien" href="<%= entry.site %>"><%= entry.site %></a>
+        <a class="donnee_practicien" href="mailto:<%= entry.email %>"><%= entry.email %></a>
+        <a class="donnee_practicien" target="_blank" href="http://<%= entry.site %>"><%= entry.site %></a>
         <% if current_user != nil %>
         <button class ="bouton">
       	  <%= link_to "Remove", practicien_path(entry), method: :delete%>
